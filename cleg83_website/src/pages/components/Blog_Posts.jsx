@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import remarkGfm from 'remark-gfm';
+import { useRef } from 'react';
 
 const markdownComponents = {
   h2: ({ node, ...props }) => (
@@ -42,6 +43,7 @@ const markdownComponents = {
 function BlogPost({ file }) {
   const [post, setPost] = useState({ content: '', data: {} });
   const [isVisible, setIsVisible] = useState(false); 
+  const postRef = useRef(null);
 
   useEffect(() => {
     fetch(file)
@@ -60,8 +62,9 @@ function BlogPost({ file }) {
 
   return (
     <div
-      id="blog_post_container"
-      className="min-h-screen bg-cover bg-center text-black p-8 border-amber-950"
+      id="blog_post_container" 
+      ref={postRef}
+      className="min-h-screen bg-center bg-cover text-black py-8 px-4 snap-proximity"
       style={{
         backgroundImage: post.data.backgroundImage
           ? `url(${post.data.backgroundImage})`
@@ -78,17 +81,28 @@ function BlogPost({ file }) {
             {isVisible ? 'Hide' : 'Read More'}
           </button>
         </div>
-
-        {isVisible && (
-          <div id="blog_post_content" className="mt-6 bg-gray-700 border rounded border-white text-white">
-            <ReactMarkdown 
-              remarkPlugins={[remarkGfm]}
-              components={markdownComponents}
-            >
-              {post.content}
-            </ReactMarkdown>
-          </div>
-        )}
+        <div id="blog_post_content" 
+          className={
+            `font-[Open_Sans] w-[90%] pt-4 mx-auto mt-6 bg-gray-700 rounded text-white 
+            transition-all duration-500 ease-in-out transform origin-top ${isVisible ? 'opacity-100 scale-100 max-h-[100%]' : 'opacity-0 scale-0 max-h-0'}`
+          }
+        >
+          <ReactMarkdown 
+            remarkPlugins={[remarkGfm]}
+            components={markdownComponents}
+          >
+            {post.content}
+          </ReactMarkdown>
+          <button
+            onClick={() => {
+              setIsVisible(false);
+              postRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }}
+            className="font-[Raleway] bg-amber-800 text-white px-4 py-2 mb-4 rounded hover:bg-amber-700 transition delay"
+          >
+            Hide
+          </button>
+        </div>
       </div>
     </div>
   );
