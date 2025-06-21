@@ -32,15 +32,15 @@ Let's go!
 | 1975 | Steely Dan | The Royal Scam |
 | 1976 | | |
 | 1977 | | |
-| 1978 | | |
+| 1978 | Talking Heads | More Songs About Buildings And Food |
 | 1979 | | |
 | 1980 | | |
 | 1981 | | |
 | 1982 | Donald Fagen | The Nightfly |
-| 1983 | | |
+| 1983 | Tony Rice | Church Street Blues |
 | 1984 | | |
 | 1985 | | |
-| 1986 | | |
+| 1986 | The Smiths | The Queen Is Dead |
 | 1987 | | |
 | 1988 | | |
 | 1989 | | |
@@ -69,7 +69,7 @@ Let's go!
 | 2010 | | |
 | 2011 | | |
 | 2012 | | |
-| 2013 | | |
+| 2013 | White Denim | Corsicana Lemonade |
 | 2014 | Rival Sons   | The Great Western Valkyrie |
 |      | Punch Brothers  |  The Phosphorescent Blues  |
 | 2015 | | |
