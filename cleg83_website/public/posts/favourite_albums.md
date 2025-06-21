@@ -1,6 +1,6 @@
 ---
 title: "Favourite Albums"
-backgroundImage: "/images/test_bg1.jpg"
+backgroundImage: "/images/pexels-koolshooters-6621704.jpg"
 ---
 
 ## My favourite albums by year, 1960 - present.

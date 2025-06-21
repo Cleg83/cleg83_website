@@ -70,7 +70,7 @@ function BlogPost({ file }) {
     >
       <div id="blog_content_container">
         <div id="blog_heading_container">
-          <h1 className="text-4xl my-2">{post.data.title || 'No title'}</h1>
+          <h1 className="text-4xl my-2 text-white">{post.data.title || 'No title'}</h1>
           <button
             onClick={() => setIsVisible(!isVisible)}
             className="bg-amber-800 text-white px-4 py-2 rounded hover:bg-amber-700 transition"
