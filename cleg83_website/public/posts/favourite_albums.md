@@ -13,9 +13,9 @@ Let's go!
 
 | Year | Artist | Album |
 | :--- | :----: | :---: |
-| 1960 | | |
-| 1961 | | | 
-| 1962 | | |
+| 1960 | The Everly Brothers | A Date with the Everly Brothers  |
+| 1961 | Roy Orbison | Lonely And Blue | 
+| 1962 |  Peter, Paul and Mary |  Peter, Paul and Mary |
 | 1963 | | | 
 | 1964 | | |
 | 1965 | | |
