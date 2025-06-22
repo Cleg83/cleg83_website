@@ -1,15 +1,12 @@
-function TestImage() {
-  return (
-    <img src="/Bone-Daddy-Hoods.png" alt="test-image" className="size-48" />
-  );
-}
-
 export default function Home() {
   return (
-    <div className="w-full p-4">
-      <h1 className="text-3xl font-bold text-blue-600">Home Page</h1>
-      <p className="mt-2 text-black">Welcome to the homepage!</p>
-      <TestImage />
-    </div>
+      <div className="relative min-h-screen text-black pt-16">
+        <div
+          className="absolute inset-0 z-0 bg-[url(/images/pexels-marek-piwnicki-3907296-20066246.jpg)] bg-cover"
+        />
+          <div className="relative z-10">
+            <h1 className="text-4xl">Test</h1>
+          </div>
+      </div>
   );
 }
