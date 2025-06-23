@@ -1,6 +1,6 @@
 function ContactForm () {
   return (
-    <div className="w-full max-w-xs mx-auto mt-8">
+    <div className="w-full max-w-xs mx-auto opacity-90">
       <form className="font-[Open_Sans] bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2 text-left" for="name">
